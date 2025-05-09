@@ -1,4 +1,3 @@
-import 'package:flightbookapp/core/res/app_media.dart';
 import 'package:flightbookapp/core/res/styles/app_theme.dart';
 import 'package:flightbookapp/core/widgets/app_texts.dart';
 import 'package:flightbookapp/screens/search/widgets/app_text_icon.dart';
@@ -15,41 +14,41 @@ class SearchScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppTheme.bgColor,
       body: ListView(
-        padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+        padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
         children: [
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Text(
             "What are\nyou looking for?",
             style: AppTheme.headLineStyle1.copyWith(fontSize: 32),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          TicketsTabs(
+          const TicketsTabs(
             firstTab: "All tickets",
             secondTab: "Hotels",
           ),
-          SizedBox(
+          const SizedBox(
             height: 24,
           ),
-          AppTextIcon(
+          const AppTextIcon(
             icon: Icons.flight_takeoff_rounded,
             text: "Departure",
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          AppTextIcon(
+          const AppTextIcon(
             icon: Icons.flight_land_rounded,
             text: "Arrival",
           ),
-          SizedBox(
+          const SizedBox(
             height: 24,
           ),
-          FindTickets(),
-          SizedBox(
+          const FindTickets(),
+          const SizedBox(
             height: 40,
           ),
           AppTexts(
@@ -57,10 +56,10 @@ class SearchScreen extends StatelessWidget {
             descText: "View all",
             func: () {},
           ),
-          SizedBox(
+          const SizedBox(
             height: 15,
           ),
-          TicketPromotion()
+          const TicketPromotion()
         ],
       ),
     );

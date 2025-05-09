@@ -14,14 +14,14 @@ class SearchTabsWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 7),
+      padding: const EdgeInsets.symmetric(vertical: 7),
       width: size.width * .44,
-      child: Center(child: Text(tabText)),
       decoration: BoxDecoration(
           color: tabColor,
           borderRadius: tabBorder == false
-              ? BorderRadius.horizontal(left: Radius.circular(46))
-              : BorderRadius.horizontal(right: Radius.circular(46))),
+              ? const BorderRadius.horizontal(left: Radius.circular(46))
+              : const BorderRadius.horizontal(right: Radius.circular(46))),
+      child: Center(child: Text(tabText)),
     );
   }
 }

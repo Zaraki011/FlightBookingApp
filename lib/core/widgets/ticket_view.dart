@@ -5,7 +5,6 @@ import 'package:flightbookapp/core/widgets/circle_half.dart';
 import 'package:flightbookapp/core/widgets/flight_circle.dart';
 import 'package:flightbookapp/core/widgets/styled_text_headline_four.dart';
 import 'package:flightbookapp/core/widgets/styled_text_headline_three.dart';
-import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 
 class TicketView extends StatelessWidget {
@@ -40,12 +39,12 @@ class TicketView extends StatelessWidget {
           children: [
             // Ticket top section
             Container(
-              padding: EdgeInsets.all(15),
+              padding: const EdgeInsets.all(15),
               decoration: BoxDecoration(
                   color: isDefault == true
                       ? Colors.white
                       : AppTheme.ticketTopColor,
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(19),
                       topRight: Radius.circular(19))),
               child: Column(
@@ -57,7 +56,7 @@ class TicketView extends StatelessWidget {
                         text: ticket["from"]["code"],
                         color: primaryColor,
                       ),
-                      Spacer(),
+                      const Spacer(),
                       FlightCircle(
                         color: designColor,
                       ),
@@ -85,7 +84,7 @@ class TicketView extends StatelessWidget {
                       FlightCircle(
                         color: designColor,
                       ),
-                      Spacer(),
+                      const Spacer(),
                       StyledTextHeadlineThree(
                         text: ticket["to"]["code"],
                         color: primaryColor,
@@ -93,7 +92,7 @@ class TicketView extends StatelessWidget {
                     ],
                   ),
 
-                  SizedBox(
+                  const SizedBox(
                     height: 3,
                   ),
                   // destinations names and time
@@ -130,7 +129,7 @@ class TicketView extends StatelessWidget {
               child: Row(
                 children: [
                   CircleHalf(isRight: false, color: circleColor),
-                  Expanded(
+                  const Expanded(
                       child: AppLayoutBuilder(
                     randomDivider: 12,
                     width: 4,
@@ -146,16 +145,16 @@ class TicketView extends StatelessWidget {
             ),
             // Ticket bottom section
             Container(
-              padding: EdgeInsets.all(15),
+              padding: const EdgeInsets.all(15),
               decoration: BoxDecoration(
                   color: AppTheme.ticketBottomColor,
                   borderRadius: BorderRadius.only(
                       bottomLeft: styleTwo == true
-                          ? Radius.circular(0)
-                          : Radius.circular(19),
+                          ? const Radius.circular(0)
+                          : const Radius.circular(19),
                       bottomRight: styleTwo == true
-                          ? Radius.circular(0)
-                          : Radius.circular(19))),
+                          ? const Radius.circular(0)
+                          : const Radius.circular(19))),
               child: Column(
                 children: [
                   // destinations with codes
@@ -186,7 +185,7 @@ class TicketView extends StatelessWidget {
                     ],
                   ),
 
-                  SizedBox(
+                  const SizedBox(
                     height: 3,
                   ),
                 ],

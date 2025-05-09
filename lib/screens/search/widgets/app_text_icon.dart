@@ -10,16 +10,16 @@ class AppTextIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 12, horizontal: 12),
+      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 12),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10), color: Colors.white),
       child: Row(
         children: [
           Icon(
             icon,
-            color: Color(0xFFBFC2DF),
+            color: const Color(0xFFBFC2DF),
           ),
-          SizedBox(
+          const SizedBox(
             width: 8,
           ),
           Text(

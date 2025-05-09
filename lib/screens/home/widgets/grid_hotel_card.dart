@@ -17,8 +17,8 @@ class GridHotelCard extends StatelessWidget {
             arguments: {"index": index});
       },
       child: Container(
-        padding: EdgeInsets.all(8),
-        margin: EdgeInsets.only(right: 14),
+        padding: const EdgeInsets.all(8),
+        margin: const EdgeInsets.only(right: 14),
         // width: 250,
         height: 350,
         decoration: BoxDecoration(
@@ -36,7 +36,7 @@ class GridHotelCard extends StatelessWidget {
                       fit: BoxFit.cover,
                       image: AssetImage("assets/images/${hotel['image']}"))),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Padding(
@@ -46,7 +46,7 @@ class GridHotelCard extends StatelessWidget {
                 style: AppTheme.headLineStyle2.copyWith(color: Colors.black45),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 2,
             ),
             Padding(
@@ -56,7 +56,7 @@ class GridHotelCard extends StatelessWidget {
                 style: AppTheme.headLineStyle3.copyWith(color: Colors.black45),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 2,
             ),
             Padding(

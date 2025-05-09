@@ -1,4 +1,3 @@
-import 'package:flightbookapp/core/res/app_media.dart';
 import 'package:flightbookapp/core/res/styles/app_theme.dart';
 import 'package:flutter/material.dart';
 
@@ -10,8 +9,8 @@ class HotelCard extends StatelessWidget {
   Widget build(BuildContext context) {
     // final size = MediaQuery.of(context).size;
     return Container(
-      padding: EdgeInsets.all(8),
-      margin: EdgeInsets.only(right: 8),
+      padding: const EdgeInsets.all(8),
+      margin: const EdgeInsets.only(right: 8),
       width: 250,
       height: 350,
       decoration: BoxDecoration(
@@ -28,7 +27,7 @@ class HotelCard extends StatelessWidget {
                     fit: BoxFit.cover,
                     image: AssetImage("assets/images/${hotel['image']}"))),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Padding(
@@ -38,7 +37,7 @@ class HotelCard extends StatelessWidget {
               style: AppTheme.headLineStyle1.copyWith(color: Colors.black45),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 5,
           ),
           Padding(
@@ -48,7 +47,7 @@ class HotelCard extends StatelessWidget {
               style: AppTheme.headLineStyle2.copyWith(color: Colors.black45),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 5,
           ),
           Padding(

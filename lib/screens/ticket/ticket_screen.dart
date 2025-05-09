@@ -37,23 +37,23 @@ class _TicketScreenState extends State<TicketScreen> {
       body: Stack(
         children: [
           ListView(
-            padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Text(
                 "Tickets",
                 style: AppTheme.headLineStyle1,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
-              TicketsTabs(
+              const TicketsTabs(
                 firstTab: "Upcoming",
                 secondTab: "Previous",
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               // flight details ticket
@@ -69,13 +69,13 @@ class _TicketScreenState extends State<TicketScreen> {
                       circleColor: Colors.white,
                       styleTwo: true,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 1,
                     ),
                     Container(
                       width: 360,
                       padding:
-                          EdgeInsets.symmetric(horizontal: 15, vertical: 20),
+                          const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
                       color: Colors.white,
                       child: Column(
                         children: [
@@ -99,8 +99,8 @@ class _TicketScreenState extends State<TicketScreen> {
                             ],
                           ),
                           Container(
-                            padding: EdgeInsets.symmetric(vertical: 20),
-                            child: AppLayoutBuilder(
+                            padding: const EdgeInsets.symmetric(vertical: 20),
+                            child: const AppLayoutBuilder(
                               randomDivider: 12,
                               width: 4,
                               color: AppTheme.bgColor,
@@ -126,8 +126,8 @@ class _TicketScreenState extends State<TicketScreen> {
                             ],
                           ),
                           Container(
-                            padding: EdgeInsets.symmetric(vertical: 20),
-                            child: AppLayoutBuilder(
+                            padding: const EdgeInsets.symmetric(vertical: 20),
+                            child: const AppLayoutBuilder(
                               randomDivider: 12,
                               width: 4,
                               color: AppTheme.bgColor,
@@ -146,7 +146,7 @@ class _TicketScreenState extends State<TicketScreen> {
                                         AppMedia.mastercard,
                                         scale: 18,
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 10,
                                       ),
                                       Text(
@@ -177,15 +177,15 @@ class _TicketScreenState extends State<TicketScreen> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 1,
                     ),
                     // barcode section
                     Container(
                       width: 360,
                       padding:
-                          EdgeInsets.symmetric(horizontal: 15, vertical: 20),
-                      decoration: BoxDecoration(
+                          const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
+                      decoration: const BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.only(
                               bottomRight: Radius.circular(21),
@@ -204,11 +204,11 @@ class _TicketScreenState extends State<TicketScreen> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Container(
-                padding: EdgeInsets.symmetric(
+                padding: const EdgeInsets.symmetric(
                   horizontal: 15,
                 ),
                 child: TicketView(
@@ -223,10 +223,10 @@ class _TicketScreenState extends State<TicketScreen> {
               left: 15,
               top: 400,
               child: Container(
-                padding: EdgeInsets.all(3),
+                padding: const EdgeInsets.all(3),
                 decoration: BoxDecoration(
                     shape: BoxShape.circle, border: Border.all(width: 2)),
-                child: CircleAvatar(
+                child: const CircleAvatar(
                   maxRadius: 4,
                   backgroundColor: Colors.black,
                 ),
@@ -235,10 +235,10 @@ class _TicketScreenState extends State<TicketScreen> {
               right: 15,
               top: 400,
               child: Container(
-                padding: EdgeInsets.all(3),
+                padding: const EdgeInsets.all(3),
                 decoration: BoxDecoration(
                     shape: BoxShape.circle, border: Border.all(width: 2)),
-                child: CircleAvatar(
+                child: const CircleAvatar(
                   maxRadius: 4,
                   backgroundColor: Colors.black,
                 ),

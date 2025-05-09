@@ -30,12 +30,12 @@ class AppTexts extends StatelessWidget {
               Card(
                 color: Colors.white,
                 child: Container(
-                  padding: EdgeInsets.all(6),
+                  padding: const EdgeInsets.all(6),
                   child: GradientText(
                     'New',
                     style: AppTheme.headLineStyle1.copyWith(fontSize: 8),
-                    colors: [
-                      const Color.fromARGB(255, 215, 7, 7),
+                    colors: const [
+                      Color.fromARGB(255, 215, 7, 7),
                       Colors.red,
                     ],
                   ),

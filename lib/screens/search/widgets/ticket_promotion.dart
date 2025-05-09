@@ -1,7 +1,6 @@
 import 'package:flightbookapp/core/res/app_media.dart';
 import 'package:flightbookapp/core/res/styles/app_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class TicketPromotion extends StatelessWidget {
   const TicketPromotion({super.key});
@@ -14,7 +13,7 @@ class TicketPromotion extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Container(
-          padding: EdgeInsets.symmetric(vertical: 15, horizontal: 15),
+          padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 15),
           width: size.width * .45,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
@@ -29,11 +28,11 @@ class TicketPromotion extends StatelessWidget {
                   height: 190,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(12),
-                    image: DecorationImage(
+                    image: const DecorationImage(
                         image: AssetImage(AppMedia.hotelRoom),
                         fit: BoxFit.cover),
                   )),
-              SizedBox(
+              const SizedBox(
                 height: 12,
               ),
               Text(
@@ -48,7 +47,7 @@ class TicketPromotion extends StatelessWidget {
             Stack(
               children: [
                 Container(
-                  padding: EdgeInsets.symmetric(vertical: 15, horizontal: 15),
+                  padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 15),
                   width: size.width * .45,
                   decoration: BoxDecoration(
                       color: Colors.deepOrange.shade800,
@@ -61,7 +60,7 @@ class TicketPromotion extends StatelessWidget {
                         style: AppTheme.headLineStyle2.copyWith(
                             fontWeight: FontWeight.bold, color: Colors.white),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Text(
@@ -78,7 +77,7 @@ class TicketPromotion extends StatelessWidget {
                   right: -45,
                   top: -35,
                   child: Container(
-                    padding: EdgeInsets.all(30),
+                    padding: const EdgeInsets.all(30),
                     decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         border: Border.all(
@@ -87,11 +86,11 @@ class TicketPromotion extends StatelessWidget {
                 )
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
               width: size.width * 0.44,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(18),
@@ -103,10 +102,10 @@ class TicketPromotion extends StatelessWidget {
                     style:
                         AppTheme.headLineStyle2.copyWith(color: Colors.white),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
-                  Image(
+                  const Image(
                       width: 90,
                       height: 90,
                       image: AssetImage(AppMedia.emojiLoveEyes))

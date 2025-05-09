@@ -17,10 +17,10 @@ class CircleHalf extends StatelessWidget {
           decoration: BoxDecoration(
               color: color,
               borderRadius: isRight == true
-                  ? BorderRadius.only(
+                  ? const BorderRadius.only(
                       topLeft: Radius.circular(10),
                       bottomLeft: Radius.circular(10))
-                  : BorderRadius.only(
+                  : const BorderRadius.only(
                       topRight: Radius.circular(10),
                       bottomRight: Radius.circular(10)))),
     );

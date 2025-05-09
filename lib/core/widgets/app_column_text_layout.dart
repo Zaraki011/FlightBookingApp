@@ -1,7 +1,6 @@
 import 'package:flightbookapp/core/widgets/styled_text_headline_four.dart';
 import 'package:flightbookapp/core/widgets/styled_text_headline_three.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class AppColumnTextLayout extends StatelessWidget {
   final String topText;
@@ -27,7 +26,7 @@ class AppColumnTextLayout extends StatelessWidget {
           text: topText,
           color: Colors.black,
         ),
-        SizedBox(
+        const SizedBox(
           height: 5,
         ),
         StyledTextHeadlineFour(

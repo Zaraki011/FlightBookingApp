@@ -12,7 +12,7 @@ class TicketsTabs extends StatelessWidget {
     // final size = MediaQuery.of(context).size;
     return Container(
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(46), color: Color(0xFFF4F6FD)),
+          borderRadius: BorderRadius.circular(46), color: const Color(0xFFF4F6FD)),
       child: Row(
         children: [
           SearchTabsWidget(

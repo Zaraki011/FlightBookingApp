@@ -7,15 +7,15 @@ class FindTickets extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 18, horizontal: 18),
+      padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 18),
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10), color: Colors.red.shade800),
       child: Center(
         child: Text(
           "Search",
           style: AppTheme.textStyle.copyWith(color: Colors.white),
         ),
       ),
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10), color: Colors.red.shade800),
     );
   }
 }
